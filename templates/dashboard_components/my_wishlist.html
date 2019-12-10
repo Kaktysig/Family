@@ -1,0 +1,67 @@
+<div class="row">
+  <div class="col-12 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Мой список пожеланий</h4>
+        <div class="add-items d-flex">
+          <input type="text" class="form-control todo-list-input" placeholder="Название подарка">
+          <button class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn" id="add-task">Добавить</button>
+        </div>
+        <div class="list-wrapper">
+          <ul class="d-flex flex-column-reverse todo-list todo-list-custom">
+            <li>
+              <div class="form-check wishlist">
+                Водяной пистолетик
+                <a data-toggle="modal" data-name="Водяной пистолетик" data-cost="3800" data-desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-links="vk.com;facebook.com" data-target="#WishDescModal">
+                  <span class="mdi mdi-file-document-box-outline"></span>
+                  Описание
+                </a>
+                <span> 3800 ₽ </span>
+              </div>
+              <i class="remove mdi mdi-close-circle-outline"></i>
+            </li>
+            <li class="completed">
+              <div class="form-check wishlist">
+                Футболка с Гарри Поттером
+              </div>
+              <i class="remove mdi mdi-close-circle-outline"></i>
+            </li>
+            <li>
+              <div class="form-check wishlist">
+                Шоколадка "Milka"
+                <span></span>
+                <span> 70 ₽ </span>
+              </div>
+              <i class="remove mdi mdi-close-circle-outline"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="WishDescModal" tabindex="-1" role="dialog" aria-labelledby="WishDescModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="WishDescModalTitle"></h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body pt-0">
+        <div class="links mb-2">
+        </div>
+        <div class="desc p-3">
+        </div>
+        <div class="text-right cost">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.wishlist{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.wishlist span, .wishlist a{
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+.links a{
+    display: block;
+    border-bottom: 1px solid #cdcfd4;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    padding: 0.4375rem;
+}
